@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     # Check if the user was registered
     if ($result) {
-        # Loga o usuário na sessão e redireciona para a página de admin
+        # User login and redirect
         session_start();
         $_SESSION['email'] = $email;
         header('Location: /admin');
